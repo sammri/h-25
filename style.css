@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.global {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #333;
+    position: relative; /* Изменено на relative для правильного позиционирования дочерних элементов */
+}
+
+.box:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(254, 86, 86);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.box:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(47, 42, 201);
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Центрирование блока */
+    z-index: 1;
+}
+
+.box:nth-child(3) {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(103, 192, 78);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
